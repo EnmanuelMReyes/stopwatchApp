@@ -180,6 +180,7 @@ const App = () => {
 
     return (
         <div className='main'>
+            <h1 className="title">Stopwatch</h1>
             <div className='timer'>{showInFormat(timer)}  </div>
             {
                 hasLap ?
@@ -215,15 +216,16 @@ const App = () => {
                     <button onClick={handleStop} name='stop-btn'>Stop</button>
                     <button onClick={handleLap} name='lap-btn'>Lap</button>
                 </div> : isStopped ?
-                        <div>
-                            <button onClick={handleResume} name='resume-btn'>Resume</button>
-                            <button onClick={handleReset} name='reset-btn'>Reset</button>
-                        </div> :
-                        <button onClick={handleStart} name='start-btn'>Start</button>
+                    <div>
+                        <button onClick={handleResume} name='resume-btn'>Resume</button>
+                        <button onClick={handleReset} name='reset-btn'>Reset</button>
+                    </div> :
+                    <button onClick={handleStart} name='start-btn'>Start</button>
 
             }
             </div>
-        </div >
+            <footer className="foot-cls">Made with <span className='hi'>♥</span> by <strong>Enmanuel Reyes</strong></footer>
+        </div>
     );
 }
 
