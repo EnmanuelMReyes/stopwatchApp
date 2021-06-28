@@ -199,7 +199,7 @@ const App = () => {
                                     {
                                         LapDetails.map((detail) => {
                                             return (
-                                                < tr key={detail.id} className={detail.hihg == true ? 'hi' : detail.low == true ? 'lo' : ''}  >
+                                                < tr key={detail.id} className={detail.hihg == true ? 'high' : detail.low == true ? 'low' : ''}  >
                                                     <td>{detail.id}</td>
                                                     <td>{detail.lapTIme}</td>
                                                     <td>{detail.overallTime}</td>
