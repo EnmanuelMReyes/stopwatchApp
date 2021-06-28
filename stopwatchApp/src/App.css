@@ -63,11 +63,11 @@ body{
   pointer-events: none;
 }
 
-.hi{
+.high{
   color:red;
 }
 
-.lo{
+.low{
   color:blue;
 }
 

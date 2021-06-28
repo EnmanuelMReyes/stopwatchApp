@@ -199,7 +199,7 @@ const App = () => {
                                     {
                                         LapDetails.map((detail) => {
                                             return (
-                                                < tr key={detail.id} className={detail.hi == true ? 'hi' : detail.lo == true ? 'lo' : ''}  >
+                                                < tr key={detail.id} className={detail.hihg == true ? 'hi' : detail.low == true ? 'lo' : ''}  >
                                                     <td>{detail.id}</td>
                                                     <td>{detail.lapTIme}</td>
                                                     <td>{detail.overallTime}</td>
@@ -224,7 +224,7 @@ const App = () => {
 
             }
             </div>
-            <footer className="foot-cls">Made with <span className='hi'>♥</span> by <strong>Enmanuel Reyes</strong></footer>
+            <footer className="foot-cls">Made with <span className='high'>♥</span> by <strong>Enmanuel Reyes</strong></footer>
         </div>
     );
 }
